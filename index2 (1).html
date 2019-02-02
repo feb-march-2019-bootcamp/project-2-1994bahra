@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+html,body
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* navigation */
+
+li a:hover:not(.active) {
+  background-color: rgb(248, 219, 248);
+  padding: 1rem;
+  
+}
+nav ul {
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  background-color: #b39cb4;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  color:rgb(140, 89, 182);
+  text-decoration: rgb(140, 89, 182);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color:rgb(20, 92, 173);
+}
+/* //////////////////////////////////////////////////////// */
+
+
+/* introduction */
+.introduction {
+  top: 0;
+  background:#f0dcf1;
+  min-height: 65vh;
+  padding-top: 45vh;
+  color:  rgb(140, 89, 182);
+}
+/* projecttttttttt */
+
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+  background: #bcc1fa;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #002d80;
+  font-weight: bold;
+}
+
+.project {
+  text-decoration: none;
+  color: #002d80;
+  display: inline-block;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  
+}
+.project-title{
+  font-weight: bold;
+  padding: 1.2rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+   nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 20px ;
+  }  
+
+  .project {
+    
+    margin: 40px 0;     
+  }
+}
+
+/* contact */
+.contact {
+  
+  background: rgba(221, 129, 190, 0.692);
+  padding-bottom: 165px;  
+}
+
+.header {
+  padding: 200px 0 110px; 
+  color:  rgb(140, 89, 182);
+}
+
+
+.imgcontact{
+  display: inline-block; 
+   font-weight: bold; 
+   margin: 0 35px 45px 35px; 
+  width: 100px;
+  height: 60px; 
+  background: white;
+  
+}
+
+
+@media only screen and (max-width: 367px) {
+  
+ 
+  .imgcontact{
+    width: 100px;
+    height: 50px;
+     padding: 1px; 
+    
+  }}
+
+
+footer {
+  padding: 20px;
+  background:black;
+  color: aliceblue;
+}
+
+   </style>
+</head>
+<body >
+  
+    <nav>
+                <ul id='navbar'>
+                    
+                  <li><a href="#welcome-section">About</a></li>
+                  <li><a href="#projects">Work</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              
+              <div id="welcome-section" class="introduction"><h1>Welcome to my personal portfolio</h1>
+                    <p>   My Name is Bahra . I'm a Software Engineer .I graduated in 2016.</p>
+                    </div>
+ <!--projecttttttttttttttttttt -->
+ 
+ <div id="projects" class="work">
+        <h2 class="work-header">These are some of my projects..</h2>
+        <a href="https://www.w3schools.com/graphics/tryit.asp?filename=trycanvas_clock_start"  class="project project-tile">
+          <img class="project-pic" src="clock.PNG" alt="project">
+          <div class="project-title">Canvas Clock</div>
+        </a>
+        <a href="https://www.w3schools.com/graphics/tryit.asp?filename=trygame_score" class="project project-tile">
+          <img class="project-pic" src="Capture2.PNG" alt="project">
+          <div class="project-title">Game Score</div>
+        </a>
+        <a href="https://www.javatpoint.com/Puzzle-Game" class="project project-tile">
+          <img class="project-pic" src="puzzle2.PNG" alt="project">
+          <div class="project-title">Puzzle Game</div>
+        </a>
+        <a href="https://www.patreon.com/Gamecodeschool" target="_blank" class="project project-tile">
+          <img class="project-pic" src="game.PNG" alt="project">
+          <div class="project-title">Game code</div>
+        </a>
+       </div>
+    
+       <div id="contact" class="contact">
+          <h1 class="header">Let's work together...</h1>
+        <a href="https://www.facebook.com/bahraiii"  class="contact-details"><img class="imgcontact" src="facebook.png" ></a>
+        <a id='profile-link' href="https://github.com/1994bahra"  class="contact-details"><img class="imgcontact" src="github.png" ></a>
+        <a href="bahra.ibrahim9485@gmail.com" class="contact-details"><img class="imgcontact" src="email.png" ></a>
+        <a href="tel:+9647508916979" class="contact-details"><img class="imgcontact" src="call.png" ></a>
+      </div>
+  <footer>
+      **This is just a fake my portfolio.. All the projects and contact details given are not real....
+      </footer>
+                  
+    
+</body>
+</html>
